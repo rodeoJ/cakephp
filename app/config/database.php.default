@@ -54,8 +54,10 @@
  * 'public', DB2 defaults to empty.
  *
  * encoding =>
- * For MySQL, MySQLi, Postgres specifies the character encoding to use when connecting to the
+ * For MySQL, Postgres specifies the character encoding to use when connecting to the
  * database.  Uses database default.
+ * Note: The MySQLi driver is not compatible with PHP's PDO library.  If you typically use this driver
+ * please use the MySQL driver instead.
  *
  */
 class DATABASE_CONFIG {
